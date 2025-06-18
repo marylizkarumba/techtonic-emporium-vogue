@@ -13,6 +13,10 @@ const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
+  const formatPrice = (price) => {
+    return `KSh ${price.toLocaleString('en-KE')}`;
+  };
+
   const products = {
     phones: [
       { id: 1, name: "iPhone 15 Pro", price: 150000, image: "/placeholder.svg", rating: 4.8, category: "phones" },
@@ -33,16 +37,16 @@ const Index = () => {
       { id: 12, name: "Fitbit Versa 4", price: 20000, image: "/placeholder.svg", rating: 4.4, category: "smartwatches" },
     ],
     gaming: [
-      { id: 13, name: "PS5 Console", price: 550000, image: "/placeholder.svg", rating: 4.9, category: "gaming" },
-      { id: 14, name: "Xbox Series X", price: 550000, image: "/placeholder.svg", rating: 4.8, category: "gaming" },
-      { id: 15, name: "Nintendo Switch OLED", price: 360000, image: "/placeholder.svg", rating: 4.7, category: "gaming" },
-      { id: 16, name: "Steam Deck", price: 400000, image: "/placeholder.svg", rating: 4.6, category: "gaming" },
+      { id: 13, name: "PS5 Console", price: 55000, image: "/placeholder.svg", rating: 4.9, category: "gaming" },
+      { id: 14, name: "Xbox Series X", price: 55000, image: "/placeholder.svg", rating: 4.8, category: "gaming" },
+      { id: 15, name: "Nintendo Switch OLED", price: 36000, image: "/placeholder.svg", rating: 4.7, category: "gaming" },
+      { id: 16, name: "Steam Deck", price: 40000, image: "/placeholder.svg", rating: 4.6, category: "gaming" },
     ],
     audio: [
-      { id: 17, name: "AirPods Pro 2", price: 250000, image: "/placeholder.svg", rating: 4.8, category: "audio" },
-      { id: 18, name: "Sony WH-1000XM5", price: 400000, image: "/placeholder.svg", rating: 4.7, category: "audio" },
-      { id: 19, name: "Bose QuietComfort", price: 340000, image: "/placeholder.svg", rating: 4.6, category: "audio" },
-      { id: 20, name: "JBL Flip 6", price: 129000, image: "/placeholder.svg", rating: 4.5, category: "audio" },
+      { id: 17, name: "AirPods Pro 2", price: 25000, image: "/placeholder.svg", rating: 4.8, category: "audio" },
+      { id: 18, name: "Sony WH-1000XM5", price: 40000, image: "/placeholder.svg", rating: 4.7, category: "audio" },
+      { id: 19, name: "Bose QuietComfort", price: 34000, image: "/placeholder.svg", rating: 4.6, category: "audio" },
+      { id: 20, name: "JBL Flip 6", price: 12900, image: "/placeholder.svg", rating: 4.5, category: "audio" },
     ],
     accessories: [
       { id: 21, name: "MagSafe Charger", price: 3900, image: "/placeholder.svg", rating: 4.5, category: "accessories" },
@@ -98,7 +102,7 @@ const Index = () => {
         <h3 className="font-bold text-lg text-gray-800 mb-2">{product.name}</h3>
         <div className="flex justify-between items-center">
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            ${product.price}
+            {formatPrice(product.price)}
           </span>
           <Button 
             onClick={() => addToCart(product)}
@@ -275,7 +279,7 @@ const Index = () => {
                 <div key={item.id} className="flex items-center justify-between py-2 border-b border-purple-100">
                   <div className="flex-1">
                     <p className="font-medium text-gray-800">{item.name}</p>
-                    <p className="text-purple-600">${item.price}</p>
+                    <p className="text-purple-600">{formatPrice(item.price)}</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Button
@@ -302,7 +306,7 @@ const Index = () => {
                 <div className="flex justify-between items-center font-bold text-lg">
                   <span className="text-gray-800">Total:</span>
                   <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    ${getTotalPrice()}
+                    {formatPrice(getTotalPrice())}
                   </span>
                 </div>
                 <Button className="w-full mt-3 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white">
