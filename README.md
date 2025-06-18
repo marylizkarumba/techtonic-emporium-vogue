@@ -3,6 +3,34 @@
 
 A vibrant, modern, and fully responsive tech e-commerce website built with React, TypeScript, and Tailwind CSS. TechTonic features a bright, colorful design with smooth animations and an intuitive shopping experience.
 
+## 🏢 About TechTonic
+
+**TechTonic** is your premier destination for cutting-edge technology products, designed to revolutionize how you shop for tech. We specialize in curating the latest and greatest technology products from trusted brands, making it easy for tech enthusiasts, professionals, and everyday consumers to find exactly what they need.
+
+### Our Mission
+To democratize access to premium technology by providing a seamless, enjoyable shopping experience that connects people with the devices that enhance their digital lives.
+
+### What We Offer
+- **Premium Product Curation**: Hand-selected devices from top brands like Apple, Samsung, Sony, and more
+- **Competitive Pricing**: Best-in-market prices with regular promotions and deals
+- **Expert Reviews**: Detailed product insights and ratings to help you make informed decisions
+- **Fast Delivery**: Quick and reliable shipping across all locations
+- **Customer Support**: Dedicated support team for all your tech needs
+
+### Target Audience
+- **Tech Enthusiasts**: Early adopters who want the latest gadgets and innovations
+- **Professionals**: Business users seeking reliable, high-performance devices
+- **Students**: Budget-conscious shoppers looking for quality tech for education
+- **Families**: Parents and individuals seeking user-friendly, reliable technology
+- **Gamers**: Gaming enthusiasts in need of high-performance hardware and accessories
+
+### Business Model
+TechTonic operates as a B2C e-commerce platform, generating revenue through:
+- Direct product sales with competitive margins
+- Partnership programs with manufacturers
+- Extended warranty and service plans
+- Accessory and complementary product sales
+
 ## 🌟 Features
 
 ### 🎨 Modern Design
