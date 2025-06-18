@@ -35,7 +35,7 @@ const Index = () => {
     gaming: [
       { id: 13, name: "PS5 Console", price: 550000, image: "/placeholder.svg", rating: 4.9, category: "gaming" },
       { id: 14, name: "Xbox Series X", price: 550000, image: "/placeholder.svg", rating: 4.8, category: "gaming" },
-      { id: 15, name: "Nintendo Switch OLED", price: 360000 image: "/placeholder.svg", rating: 4.7, category: "gaming" },
+      { id: 15, name: "Nintendo Switch OLED", price: 360000, image: "/placeholder.svg", rating: 4.7, category: "gaming" },
       { id: 16, name: "Steam Deck", price: 400000, image: "/placeholder.svg", rating: 4.6, category: "gaming" },
     ],
     audio: [
