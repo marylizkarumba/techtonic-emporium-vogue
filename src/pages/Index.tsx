@@ -371,7 +371,7 @@ const Index = () => {
               <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">Terms of Service</a>
               <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">Support</a>
             </div>
-            <p className="text-gray-400">&copy; 2024 TechTonic. All rights reserved.</p>
+            <p className="text-gray-400">&copy; 2025 TechTonic. All rights reserved.</p>
           </div>
         </div>
       </footer>
