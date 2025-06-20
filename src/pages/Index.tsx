@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { ShoppingCart, Star, Phone, Laptop, Watch, Gamepad2, Headphones, Cable, Menu, X, Plus, Minus, Mail, MapPin, Clock } from "lucide-react";
+import { ShoppingCart, Star, Phone, Laptop, Watch, Gamepad2, Headphones, Cable, Menu, X, Plus, Minus, Mail, Clock } from "lucide-react";
 
 const Index = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -392,18 +392,6 @@ const Index = () => {
                       <p className="font-semibold text-gray-800">Email</p>
                       <p className="text-gray-600">info@techtonic.co.ke</p>
                       <p className="text-gray-600">support@techtonic.co.ke</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-gradient-to-r from-green-500 to-teal-500 rounded-full">
-                      <MapPin className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Address</p>
-                      <p className="text-gray-600">TechTonic Plaza, 2nd Floor</p>
-                      <p className="text-gray-600">Kimathi Street, Nairobi CBD</p>
-                      <p className="text-gray-600">P.O. Box 12345-00100, Nairobi</p>
                     </div>
                   </div>
                   
