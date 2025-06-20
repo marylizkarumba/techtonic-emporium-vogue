@@ -326,6 +326,45 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Contact Form */}
+            <div>
+              <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-800">Send us a Message</CardTitle>
+                  <CardDescription>Fill out the form below and we'll get back to you soon</CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <form className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <Label htmlFor="name" className="text-gray-700 font-medium">Name</Label>
+                        <Input id="name" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
+                      </div>
+                      <div>
+                        <Label htmlFor="email" className="text-gray-700 font-medium">Email</Label>
+                        <Input id="email" type="email" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
+                      </div>
+                    </div>
+                    <div>
+                      <Label htmlFor="subject" className="text-gray-700 font-medium">Subject</Label>
+                      <Input id="subject" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
+                    </div>
+                    <div>
+                      <Label htmlFor="message" className="text-gray-700 font-medium">Message</Label>
+                      <textarea 
+                        id="message" 
+                        rows={4} 
+                        className="mt-2 w-full px-3 py-2 border-2 border-purple-200 rounded-md focus:border-purple-500 focus:outline-none"
+                      />
+                    </div>
+                    <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg py-3">
+                      Send Message
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+
             {/* Contact Information */}
             <div className="space-y-6">
               <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
@@ -379,45 +418,6 @@ const Index = () => {
                       <p className="text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Contact Form */}
-            <div>
-              <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-gray-800">Send us a Message</CardTitle>
-                  <CardDescription>Fill out the form below and we'll get back to you soon</CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <Label htmlFor="name" className="text-gray-700 font-medium">Name</Label>
-                        <Input id="name" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
-                      </div>
-                      <div>
-                        <Label htmlFor="email" className="text-gray-700 font-medium">Email</Label>
-                        <Input id="email" type="email" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
-                      </div>
-                    </div>
-                    <div>
-                      <Label htmlFor="subject" className="text-gray-700 font-medium">Subject</Label>
-                      <Input id="subject" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
-                    </div>
-                    <div>
-                      <Label htmlFor="message" className="text-gray-700 font-medium">Message</Label>
-                      <textarea 
-                        id="message" 
-                        rows={4} 
-                        className="mt-2 w-full px-3 py-2 border-2 border-purple-200 rounded-md focus:border-purple-500 focus:outline-none"
-                      />
-                    </div>
-                    <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg py-3">
-                      Send Message
-                    </Button>
-                  </form>
                 </CardContent>
               </Card>
             </div>
