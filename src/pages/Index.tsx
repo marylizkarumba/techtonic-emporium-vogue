@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { ShoppingCart, Star, Phone, Laptop, Watch, Gamepad2, Headphones, Cable, Menu, X, Plus, Minus } from "lucide-react";
+import { ShoppingCart, Star, Phone, Laptop, Watch, Gamepad2, Headphones, Cable, Menu, X, Plus, Minus, Mail, MapPin, Clock } from "lucide-react";
 
 const Index = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -320,39 +320,107 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-red-500">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
-              <p className="text-purple-100 text-lg">Have questions? We'd love to hear from you!</p>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
+            <p className="text-purple-100 text-lg">Have questions? We'd love to hear from you!</p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Contact Information */}
+            <div className="space-y-6">
+              <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-800">Contact Information</CardTitle>
+                  <CardDescription>Reach out to us through any of these channels</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full">
+                      <Phone className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Phone</p>
+                      <p className="text-gray-600">+254 700 123 456</p>
+                      <p className="text-gray-600">+254 722 987 654</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Email</p>
+                      <p className="text-gray-600">info@techtonic.co.ke</p>
+                      <p className="text-gray-600">support@techtonic.co.ke</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-gradient-to-r from-green-500 to-teal-500 rounded-full">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Address</p>
+                      <p className="text-gray-600">TechTonic Plaza, 2nd Floor</p>
+                      <p className="text-gray-600">Kimathi Street, Nairobi CBD</p>
+                      <p className="text-gray-600">P.O. Box 12345-00100, Nairobi</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-full">
+                      <Clock className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Business Hours</p>
+                      <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                      <p className="text-gray-600">Saturday: 9:00 AM - 5:00 PM</p>
+                      <p className="text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
-            
-            <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
-              <CardContent className="p-8">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <Label htmlFor="name" className="text-gray-700 font-medium">Name</Label>
-                      <Input id="name" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
+
+            {/* Contact Form */}
+            <div>
+              <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-800">Send us a Message</CardTitle>
+                  <CardDescription>Fill out the form below and we'll get back to you soon</CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <form className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <Label htmlFor="name" className="text-gray-700 font-medium">Name</Label>
+                        <Input id="name" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
+                      </div>
+                      <div>
+                        <Label htmlFor="email" className="text-gray-700 font-medium">Email</Label>
+                        <Input id="email" type="email" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
+                      </div>
                     </div>
                     <div>
-                      <Label htmlFor="email" className="text-gray-700 font-medium">Email</Label>
-                      <Input id="email" type="email" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
+                      <Label htmlFor="subject" className="text-gray-700 font-medium">Subject</Label>
+                      <Input id="subject" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
                     </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="message" className="text-gray-700 font-medium">Message</Label>
-                    <textarea 
-                      id="message" 
-                      rows={4} 
-                      className="mt-2 w-full px-3 py-2 border-2 border-purple-200 rounded-md focus:border-purple-500 focus:outline-none"
-                    />
-                  </div>
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg py-3">
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+                    <div>
+                      <Label htmlFor="message" className="text-gray-700 font-medium">Message</Label>
+                      <textarea 
+                        id="message" 
+                        rows={4} 
+                        className="mt-2 w-full px-3 py-2 border-2 border-purple-200 rounded-md focus:border-purple-500 focus:outline-none"
+                      />
+                    </div>
+                    <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg py-3">
+                      Send Message
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
