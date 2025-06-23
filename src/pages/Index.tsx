@@ -402,7 +402,7 @@ const Index = () => {
                       <p className="font-semibold text-gray-800">Business Hours</p>
                       <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
                       <p className="text-gray-600">Saturday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Closed</p>
+                      <p className="text-gray-600">Sunday: Closed</p>
                     </div>
                   </div>
                 </CardContent>
