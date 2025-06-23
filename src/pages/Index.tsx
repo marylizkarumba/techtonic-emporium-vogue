@@ -45,7 +45,7 @@ const Index = () => {
       { id: 17, name: "AirPods Pro 2", price: 25000, image: "/placeholder.svg", rating: 4.8, category: "audio" },
       { id: 18, name: "Sony WH-1000XM5", price: 40000, image: "/placeholder.svg", rating: 4.7, category: "audio" },
       { id: 19, name: "Bose QuietComfort", price: 34000, image: "/placeholder.svg", rating: 4.6, category: "audio" },
-      { id: 20, name: "JBL Flip 6", price: 12900, image: "/placeholder.svg", rating: 4.5, category: "audio" },
+      { id: 20, name: "JBL Flip 6", price: 12900, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop", rating: 4.5, category: "audio" },
     ],
     accessories: [
       { id: 21, name: "MagSafe Charger", price: 3900, image: "/placeholder.svg", rating: 4.5, category: "accessories" },
