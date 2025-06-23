@@ -222,7 +222,7 @@ const Index = () => {
 
       {/* Categories */}
       <CategorySection 
-        title="Smartphones" 
+        title="Phones" 
         products={products.phones} 
         icon={Phone}
         gradient="bg-gradient-to-r from-blue-500 to-cyan-500"
@@ -390,7 +390,7 @@ const Index = () => {
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
                       <p className="text-gray-600">info@techtonic.co.ke</p>
-                      <p className="text-gray-600">support@techtonic.co.ke</p>
+                      <p className="text-gray-600">techtonic792@gmail.com</p>
                     </div>
                   </div>
                   
