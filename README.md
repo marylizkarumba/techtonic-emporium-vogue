@@ -148,17 +148,8 @@ The website includes a contact form with:
 
 ## 🚀 Deployment
 
-### Deploy with Lovable
-1. Open your [Lovable Project](https://lovable.dev/projects/fb77881e-8013-4686-a10b-ed9d4a6499b2)
-2. Click on Share → Publish
-3. Your site will be live instantly
 
-### Deploy Elsewhere
-The project builds to static files and can be deployed on:
-- Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting service
+
 
 ```bash
 npm run build
@@ -206,13 +197,3 @@ To add new sections:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🆘 Support
-
-For support and questions:
-- Visit the [Lovable Documentation](https://docs.lovable.dev/)
-- Join the [Lovable Discord Community](https://discord.com/channels/1119885301872070706/1280461670979993613)
-- Check out the [Lovable YouTube Playlist](https://www.youtube.com/watch?v=9KHLTZaJcR8&list=PLbVHz4urQBZkJiAWdG8HWoJTdgEysigIO)
-
----
-
-**Built with ❤️ using Lovable - The AI-powered web app builder**
