@@ -26,7 +26,7 @@ const Index = () => {
     laptops: [
       { id: 5, name: "MacBook Pro", price: 120000, image: "https://unsplash.com/photos/macbook-pro-on-box-fhmRqhD_dYg?w=400&h=400&fit=crop", rating: 4.9, category: "laptops" },
       { id: 6, name: "Dell XPS 13D", price: 65000, image: "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-bed-GpvmJ4hqlL4?w=400&h=400&fit=crop", rating: 4.6, category: "laptops" },
-      { id: 7, name: "Lenovo Thinkpad Corei7", price: 55000, image: "https://media.istockphoto.com/id/1286866209/photo/black-laptop-with-place-on-the-screen-for-text-or-pictures-isolated-on-white-background-high.jpg?s=1024x1024&w=is&k=20&c=dc_rnnl-BkXdDulug1DEb-he2XoPq7IS8EbjWh-cWLc=?w=400&h=400&fit=crop", rating: 4.7, category: "laptops" },
+      { id: 7, name: "Lenovo Thinkpad Corei7", price: 55000, image: "https://www.istockphoto.com/photo/lenovo-thinkpad-x201-notebook-gm458405389-16812828?w=400&h=400&fit=crop", rating: 4.7, category: "laptops" },
       { id: 8, name: "Hp Elitebook 840", price: 41000, image: "https://images.unsplash.com/photo-1618410325698-018bb3eb2318?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.5, category: "laptops" },
     ],
     smartwatches: [
