@@ -49,8 +49,8 @@ const Index = () => {
     ],
     accessories: [
       { id: 21, name: "MagSafe Charger", price: 3900, image: "/placeholder.svg", rating: 4.5, category: "accessories" },
-      { id: 22, name: "Anker PowerBank", price: 4900, image: "/placeholder.svg", rating: 4.6, category: "accessories" },
-      { id: 23, name: "Logitech MX Master 3", price: 9900, image: "/placeholder.svg", rating: 4.7, category: "accessories" },
+      { id: 22, name: "OraimoPowerBank", price: 4900, image: "/placeholder.svg", rating: 4.6, category: "accessories" },
+      { id: 23, name: " ", price: 9900, image: "/placeholder.svg", rating: 4.7, category: "accessories" },
       { id: 24, name: "USB-C Hub", price: 7900, image: "/placeholder.svg", rating: 4.4, category: "accessories" },
     ],
   };
