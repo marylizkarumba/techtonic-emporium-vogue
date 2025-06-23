@@ -18,10 +18,10 @@ const Index = () => {
 
   const products = {
     phones: [
-      { id: 1, name: "iPhone 15 Pro", price: 140000, image: "https://unsplash.com/photos/an-iphone-is-sitting-on-top-of-a-box-LunVPm34ly4?w=400&h=400&fit=crop", rating: 4.8, category: "phones" },
-      { id: 2, name: "Samsung Galaxy S23 ultra", price: 112000, image: "https://unsplash.com/photos/a-close-up-of-a-samsung-galaxy-s23-ultra-phone-v-yctrWmRHo?w=400&h=400&fit=crop", rating: 4.7, category: "phones" },
-      { id: 3, name: "Google Pixel 8", price: 65000, image: "https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-table-vn6A4UKMR3I?w=400&h=400&fit=crop", rating: 4.6, category: "phones" },
-      { id: 4, name: "Realme C75", price: 26500, image: "https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-wooden-surface-KOgh9vct6ng?w=400&h=400&fit=crop", rating: 4.5, category: "phones" },
+      { id: 1, name: "iPhone 15 Pro", price: 140000, image: "https://images.unsplash.com/photo-1702289613007-8b830e2520b0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.8, category: "phones" },
+      { id: 2, name: "Samsung Galaxy S23 ultra", price: 112000, image: "https://images.unsplash.com/photo-1713027420493-e675245ea725?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.7, category: "phones" },
+      { id: 3, name: "Google Pixel 8", price: 65000, image: "https://images.unsplash.com/photo-1697355360151-2866de32ad4d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.6, category: "phones" },
+      { id: 4, name: "Realme C75", price: 26500, image: "https://images.unsplash.com/photo-1657731739322-409509986567?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.5, category: "phones" },
     ],
     laptops: [
       { id: 5, name: "MacBook Pro", price: 120000, image: "https://unsplash.com/photos/macbook-pro-on-box-fhmRqhD_dYg?w=400&h=400&fit=crop", rating: 4.9, category: "laptops" },
