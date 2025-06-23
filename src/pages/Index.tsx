@@ -379,8 +379,7 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Phone</p>
-                      <p className="text-gray-600">+254 700 123 456</p>
-                      <p className="text-gray-600">+254 722 987 654</p>
+                      <p className="text-gray-600">+254 741 645 021</p>
                     </div>
                   </div>
                   
@@ -403,7 +402,7 @@ const Index = () => {
                       <p className="font-semibold text-gray-800">Business Hours</p>
                       <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
                       <p className="text-gray-600">Saturday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
+                      <p className="text-gray-600">Closed</p>
                     </div>
                   </div>
                 </CardContent>
