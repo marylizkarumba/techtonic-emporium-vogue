@@ -32,26 +32,33 @@ const Index = () => {
     smartwatches: [
       { id: 9, name: "Apple Watch Series 9", price: 40000, image: "/placeholder.svg", rating: 4.8, category: "smartwatches" },
       { id: 10, name: "Samsung Galaxy Watch 6", price: 32000, image: "/placeholder.svg", rating: 4.6, category: "smartwatches" },
-      { id: 11, name: "Garmin Forerunner 955", price: 50000, image: "/placeholder.svg", rating: 4.7, category: "smartwatches" },
-      { id: 12, name: "Fitbit Versa 4", price: 20000, image: "/placeholder.svg", rating: 4.4, category: "smartwatches" },
+      { id: 11, name: " ", price: 50000, image: "/placeholder.svg", rating: 4.7, category: "smartwatches" },
+      { id: 12, name: " ", price: 20000, image: "/placeholder.svg", rating: 4.4, category: "smartwatches" },
     ],
     gaming: [
       { id: 13, name: "PS5 Console", price: 55000, image: "/placeholder.svg", rating: 4.9, category: "gaming" },
-      { id: 14, name: "Xbox Series X", price: 55000, image: "/placeholder.svg", rating: 4.8, category: "gaming" },
-      { id: 15, name: "Nintendo Switch OLED", price: 36000, image: "/placeholder.svg", rating: 4.7, category: "gaming" },
-      { id: 16, name: "Steam Deck", price: 40000, image: "/placeholder.svg", rating: 4.6, category: "gaming" },
+      { id: 14, name: "Xbox Series", price: 55000, image: "/placeholder.svg", rating: 4.8, category: "gaming" },
+      { id: 15, name: " ", price: 36000, image: "/placeholder.svg", rating: 4.7, category: "gaming" },
+      { id: 16, name: " ", price: 40000, image: "/placeholder.svg", rating: 4.6, category: "gaming" },
     ],
     audio: [
-      { id: 17, name: "AirPods Pro 2", price: 25000, image: "/placeholder.svg", rating: 4.8, category: "audio" },
-      { id: 18, name: "Sony WH-1000XM5", price: 40000, image: "/placeholder.svg", rating: 4.7, category: "audio" },
-      { id: 19, name: "Bose QuietComfort", price: 34000, image: "/placeholder.svg", rating: 4.6, category: "audio" },
+      { id: 17, name: "AirPods", price: 25000, image: "/placeholder.svg", rating: 4.8, category: "audio" },
+      { id: 18, name: " ", price: 40000, image: "/placeholder.svg", rating: 4.7, category: "audio" },
+      { id: 19, name: " ", price: 34000, image: "/placeholder.svg", rating: 4.6, category: "audio" },
       { id: 20, name: "JBL Flip 6", price: 12900, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop", rating: 4.5, category: "audio" },
     ],
     accessories: [
+<<<<<<< HEAD
       { id: 21, name: "MagSafe Charger", price: 3900, image: "/placeholder.svg", rating: 4.5, category: "accessories" },
       { id: 22, name: "OraimoPowerBank", price: 4900, image: "/placeholder.svg", rating: 4.6, category: "accessories" },
       { id: 23, name: " ", price: 9900, image: "/placeholder.svg", rating: 4.7, category: "accessories" },
       { id: 24, name: "USB-C Hub", price: 7900, image: "/placeholder.svg", rating: 4.4, category: "accessories" },
+=======
+      { id: 21, name: "Type-C Charger", price: 3900, image: "/placeholder.svg", rating: 4.5, category: "accessories" },
+      { id: 22, name: "Oraimo PowerBank", price: 4900, image: "/placeholder.svg", rating: 4.6, category: "accessories" },
+      { id: 23, name: " ", price: 9900, image: "/placeholder.svg", rating: 4.7, category: "accessories" },
+      { id: 24, name: "USB-C", price: 7900, image: "/placeholder.svg", rating: 4.4, category: "accessories" },
+>>>>>>> c24427be237af5187aa164384e7862e2114efc5c
     ],
   };
 
