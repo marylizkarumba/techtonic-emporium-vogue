@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { ShoppingCart, Star, Phone, Laptop, Watch, Gamepad2, Headphones, Cable, Menu, X, Plus, Minus, Mail, Clock } from "lucide-react";
+import { ShoppingCart, Star, Phone, Laptop, Watch, Gamepad2, Headphones, Cable, Menu, X, Plus, Minus, Mail, Clock, MessageCircle } from "lucide-react";
 
 const Index = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -16,49 +16,309 @@ const Index = () => {
     return `KSh ${price.toLocaleString('en-KE')}`;
   };
 
+  // Contact handler functions
+  const handleEmailContact = () => {
+    window.open('mailto:info@techtonic.co.ke?subject=Product Inquiry&body=Hello, I would like to inquire about your products.', '_blank');
+  };
+
+  const handleWhatsAppContact = () => {
+    const phoneNumber = '254741645021';
+    const message = 'Hello! I would like to inquire about your tech products.';
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
   const products = {
     phones: [
-      { id: 1, name: "iPhone 15 Pro", price: 140000, image: "https://images.unsplash.com/photo-1702289613007-8b830e2520b0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.8, category: "phones" },
-      { id: 2, name: "Samsung Galaxy S23 ultra", price: 112000, image: "https://images.unsplash.com/photo-1713027420493-e675245ea725?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.7, category: "phones" },
-      { id: 3, name: "Google Pixel 8", price: 65000, image: "https://images.unsplash.com/photo-1697355360151-2866de32ad4d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.6, category: "phones" },
-      { id: 4, name: "Realme C75", price: 26500, image: "https://images.unsplash.com/photo-1657731739322-409509986567?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.5, category: "phones" },
+      { 
+        id: 1, 
+        name: "iPhone 15 Pro", 
+        price: 140000, 
+        image: "https://images.unsplash.com/photo-1702289613007-8b830e2520b0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", 
+        rating: 4.8, 
+        category: "phones",
+        description: "Latest iPhone with A17 Pro chip, titanium design, and advanced camera system",
+        specs: ["6.1-inch Super Retina XDR display", "A17 Pro chip", "48MP main camera", "128GB storage"]
+      },
+      { 
+        id: 2, 
+        name: "Samsung Galaxy S23 ultra", 
+        price: 112000, 
+        image: "https://images.unsplash.com/photo-1713027420493-e675245ea725?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", 
+        rating: 4.7, 
+        category: "phones",
+        description: "Flagship Android phone with S Pen and exceptional camera performance",
+        specs: ["6.8-inch Dynamic AMOLED 2X", "Snapdragon 8 Gen 2", "200MP quad camera", "256GB storage"]
+      },
+      { 
+        id: 3, 
+        name: "Google Pixel 8", 
+        price: 65000, 
+        image: "https://images.unsplash.com/photo-1697355360151-2866de32ad4d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", 
+        rating: 4.6, 
+        category: "phones",
+        description: "Pure Android experience with exceptional computational photography",
+        specs: ["6.2-inch OLED display", "Google Tensor G3", "50MP main camera", "128GB storage"]
+      },
+      { 
+        id: 4, 
+        name: "Realme C75", 
+        price: 26500, 
+        image: "https://images.unsplash.com/photo-1657731739322-409509986567?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", 
+        rating: 4.5, 
+        category: "phones",
+        description: "Budget-friendly smartphone with reliable performance and long battery life",
+        specs: ["6.72-inch HD+ display", "UNISOC Tiger T606", "50MP dual camera", "128GB storage"]
+      },
     ],
     laptops: [
-      { id: 5, name: "MacBook Pro", price: 120000, image: "https://unsplash.com/photos/macbook-pro-on-box-fhmRqhD_dYg?w=400&h=400&fit=crop", rating: 4.9, category: "laptops" },
-      { id: 6, name: "Dell XPS 13D", price: 65000, image: "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-bed-GpvmJ4hqlL4?w=400&h=400&fit=crop", rating: 4.6, category: "laptops" },
-      { id: 7, name: "Lenovo Thinkpad Corei7", price: 55000, image: "https://images.unsplash.com/photo-1743456056142-1aaf69656dfa?q=80&w=868&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.7, category: "laptops" },
-      { id: 8, name: "Hp Elitebook 840", price: 41000, image: "https://images.unsplash.com/photo-1618410325698-018bb3eb2318?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", rating: 4.5, category: "laptops" },
+      { 
+        id: 5, 
+        name: "MacBook Pro", 
+        price: 120000, 
+        image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop", 
+        rating: 4.9, 
+        category: "laptops",
+        description: "Professional laptop with M3 chip for ultimate performance and battery life",
+        specs: ["14-inch Liquid Retina XDR", "Apple M3 chip", "8GB unified memory", "512GB SSD"]
+      },
+      { 
+        id: 6, 
+        name: "Dell XPS 13D", 
+        price: 65000, 
+        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop", 
+        rating: 4.6, 
+        category: "laptops",
+        description: "Ultra-portable Windows laptop with premium build quality",
+        specs: ["13.4-inch FHD+ display", "Intel Core i7", "16GB RAM", "512GB SSD"]
+      },
+      { 
+        id: 7, 
+        name: "Lenovo Thinkpad Corei7", 
+        price: 55000, 
+        image: "https://images.unsplash.com/photo-1743456056142-1aaf69656dfa?q=80&w=868&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", 
+        rating: 4.7, 
+        category: "laptops",
+        description: "Business laptop with legendary durability and security features",
+        specs: ["14-inch FHD display", "Intel Core i7", "16GB RAM", "512GB SSD"]
+      },
+      { 
+        id: 8, 
+        name: "Hp Elitebook 840", 
+        price: 41000, 
+        image: "https://images.unsplash.com/photo-1618410325698-018bb3eb2318?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop", 
+        rating: 4.5, 
+        category: "laptops",
+        description: "Professional business laptop with enterprise security and performance",
+        specs: ["14-inch FHD display", "Intel Core i5", "8GB RAM", "256GB SSD"]
+      },
     ],
     smartwatches: [
-      { id: 9, name: "Apple Watch Series 9", price: 40000, image: "/placeholder.svg", rating: 4.8, category: "smartwatches" },
-      { id: 10, name: "Samsung Galaxy Watch 6", price: 32000, image: "/placeholder.svg", rating: 4.6, category: "smartwatches" },
-      { id: 11, name: " ", price: 50000, image: "/placeholder.svg", rating: 4.7, category: "smartwatches" },
-      { id: 12, name: " ", price: 20000, image: "/placeholder.svg", rating: 4.4, category: "smartwatches" },
+      { 
+        id: 9, 
+        name: "Apple Watch Series 9", 
+        price: 40000, 
+        image: "/placeholder.svg", 
+        rating: 4.8, 
+        category: "smartwatches",
+        description: "Advanced health tracking with bright display and new S9 chip",
+        specs: ["45mm Always-On Retina display", "S9 SiP chip", "Blood oxygen monitoring", "GPS + Cellular"]
+      },
+      { 
+        id: 10, 
+        name: "Samsung Galaxy Watch 6", 
+        price: 32000, 
+        image: "/placeholder.svg", 
+        rating: 4.6, 
+        category: "smartwatches",
+        description: "Comprehensive health monitoring with long battery life",
+        specs: ["44mm Super AMOLED display", "Exynos W930", "Sleep tracking", "4G LTE"]
+      },
+      { 
+        id: 11, 
+        name: "Garmin Forerunner 955", 
+        price: 50000, 
+        image: "/placeholder.svg", 
+        rating: 4.7, 
+        category: "smartwatches",
+        description: "GPS running watch with advanced training features",
+        specs: ["1.3-inch MIP display", "Multi-band GPS", "VO2 max tracking", "32GB storage"]
+      },
+      { 
+        id: 12, 
+        name: "Fitbit Versa 4", 
+        price: 20000, 
+        image: "/placeholder.svg", 
+        rating: 4.4, 
+        category: "smartwatches",
+        description: "Fitness-focused smartwatch with 6+ day battery life",
+        specs: ["1.58-inch AMOLED display", "Built-in GPS", "Heart rate monitoring", "40+ exercise modes"]
+      },
     ],
     gaming: [
-      { id: 13, name: "PS5 Console", price: 55000, image: "/placeholder.svg", rating: 4.9, category: "gaming" },
-      { id: 14, name: "Xbox Series", price: 55000, image: "/placeholder.svg", rating: 4.8, category: "gaming" },
-      { id: 15, name: " ", price: 36000, image: "/placeholder.svg", rating: 4.7, category: "gaming" },
-      { id: 16, name: " ", price: 40000, image: "/placeholder.svg", rating: 4.6, category: "gaming" },
+      { 
+        id: 13, 
+        name: "PS5 Console", 
+        price: 55000, 
+        image: "/placeholder.svg", 
+        rating: 4.9, 
+        category: "gaming",
+        description: "Next-gen gaming console with 4K gaming and ultra-fast SSD",
+        specs: ["Custom AMD Zen 2 CPU", "10.28 TF GPU", "16GB GDDR6 RAM", "825GB SSD"]
+      },
+      { 
+        id: 14, 
+        name: "Xbox Series", 
+        price: 55000, 
+        image: "/placeholder.svg", 
+        rating: 4.8, 
+        category: "gaming",
+        description: "Powerful gaming console with backward compatibility",
+        specs: ["Custom AMD Zen 2 CPU", "12 TF GPU", "16GB GDDR6 RAM", "1TB NVMe SSD"]
+      },
+      { 
+        id: 15, 
+        name: "Nintendo Switch OLED", 
+        price: 36000, 
+        image: "/placeholder.svg", 
+        rating: 4.7, 
+        category: "gaming",
+        description: "Portable gaming console with vibrant OLED screen",
+        specs: ["7-inch OLED screen", "NVIDIA Custom Tegra", "4GB RAM", "64GB internal storage"]
+      },
+      { 
+        id: 16, 
+        name: "Steam Deck", 
+        price: 40000, 
+        image: "/placeholder.svg", 
+        rating: 4.6, 
+        category: "gaming",
+        description: "Handheld PC gaming device with access to Steam library",
+        specs: ["7-inch LCD touchscreen", "AMD APU", "16GB LPDDR5 RAM", "256GB NVMe SSD"]
+      },
     ],
     audio: [
-      { id: 17, name: "AirPods", price: 25000, image: "/placeholder.svg", rating: 4.8, category: "audio" },
-      { id: 18, name: " ", price: 40000, image: "/placeholder.svg", rating: 4.7, category: "audio" },
-      { id: 19, name: " ", price: 34000, image: "/placeholder.svg", rating: 4.6, category: "audio" },
-      { id: 20, name: "JBL Flip 6", price: 12900, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop", rating: 4.5, category: "audio" },
+      { 
+        id: 17, 
+        name: "AirPods", 
+        price: 25000, 
+        image: "/placeholder.svg", 
+        rating: 4.8, 
+        category: "audio",
+        description: "Premium wireless earbuds with active noise cancellation",
+        specs: ["H2 chip", "Active Noise Cancellation", "Spatial Audio", "6 hours playback"]
+      },
+      { 
+        id: 18, 
+        name: "Sony WH-1000XM5", 
+        price: 40000, 
+        image: "/placeholder.svg", 
+        rating: 4.7, 
+        category: "audio",
+        description: "Industry-leading noise canceling wireless headphones",
+        specs: ["30mm drivers", "Industry-leading ANC", "30-hour battery", "Quick charge"]
+      },
+      { 
+        id: 19, 
+        name: "Bose QuietComfort", 
+        price: 34000, 
+        image: "/placeholder.svg", 
+        rating: 4.6, 
+        category: "audio",
+        description: "Comfortable over-ear headphones with excellent noise cancellation",
+        specs: ["TriPort technology", "Noise cancellation", "24-hour battery", "Comfortable fit"]
+      },
+      { 
+        id: 20, 
+        name: "JBL Flip 6", 
+        price: 12900, 
+        image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop", 
+        rating: 4.5, 
+        category: "audio",
+        description: "Portable Bluetooth speaker with powerful bass and waterproof design",
+        specs: ["2-way speaker system", "IP67 waterproof", "12-hour playtime", "PartyBoost"]
+      },
     ],
     accessories: [
-<<<<<<< HEAD
-      { id: 21, name: "MagSafe Charger", price: 3900, image: "/placeholder.svg", rating: 4.5, category: "accessories" },
-      { id: 22, name: "OraimoPowerBank", price: 4900, image: "/placeholder.svg", rating: 4.6, category: "accessories" },
-      { id: 23, name: " ", price: 9900, image: "/placeholder.svg", rating: 4.7, category: "accessories" },
-      { id: 24, name: "USB-C Hub", price: 7900, image: "/placeholder.svg", rating: 4.4, category: "accessories" },
-=======
-      { id: 21, name: "Type-C Charger", price: 3900, image: "/placeholder.svg", rating: 4.5, category: "accessories" },
-      { id: 22, name: "Oraimo PowerBank", price: 4900, image: "/placeholder.svg", rating: 4.6, category: "accessories" },
-      { id: 23, name: " ", price: 9900, image: "/placeholder.svg", rating: 4.7, category: "accessories" },
-      { id: 24, name: "USB-C", price: 7900, image: "/placeholder.svg", rating: 4.4, category: "accessories" },
->>>>>>> c24427be237af5187aa164384e7862e2114efc5c
+      { 
+        id: 21, 
+        name: "MagSafe Charger", 
+        price: 3900, 
+        image: "/placeholder.svg", 
+        rating: 4.5, 
+        category: "accessories",
+        description: "Wireless charging pad with magnetic alignment for iPhone",
+        specs: ["15W wireless charging", "Magnetic alignment", "USB-C connector", "iPhone 12+ compatible"]
+      },
+      { 
+        id: 22, 
+        name: "OraimoPowerBank", 
+        price: 4900, 
+        image: "/placeholder.svg", 
+        rating: 4.6, 
+        category: "accessories",
+        description: "High-capacity portable charger with fast charging technology",
+        specs: ["20000mAh capacity", "22.5W fast charging", "Multiple ports", "LED indicator"]
+      },
+      { 
+        id: 23, 
+        name: "Logitech MX Master 3", 
+        price: 9900, 
+        image: "/placeholder.svg", 
+        rating: 4.7, 
+        category: "accessories",
+        description: "Advanced wireless mouse for productivity and precision",
+        specs: ["4000 DPI sensor", "70-day battery", "USB-C charging", "Cross-computer control"]
+      },
+      { 
+        id: 24, 
+        name: "USB-C Hub", 
+        price: 7900, 
+        image: "/placeholder.svg", 
+        rating: 4.4, 
+        category: "accessories",
+        description: "Multi-port adapter for modern laptops and devices",
+        specs: ["7-in-1 design", "4K HDMI output", "USB 3.0 ports", "SD card reader"]
+      },
+      { 
+        id: 25, 
+        name: "Type-C Charger", 
+        price: 3900, 
+        image: "/placeholder.svg", 
+        rating: 4.5, 
+        category: "accessories",
+        description: "Fast charging USB-C adapter with multiple safety features",
+        specs: ["65W fast charging", "GaN technology", "Universal compatibility", "Compact design"]
+      },
+      { 
+        id: 26, 
+        name: "Oraimo PowerBank", 
+        price: 4900, 
+        image: "/placeholder.svg", 
+        rating: 4.6, 
+        category: "accessories",
+        description: "Reliable portable power bank with fast charging capabilities",
+        specs: ["10000mAh capacity", "18W fast charging", "Dual USB ports", "LED power display"]
+      },
+      { 
+        id: 27, 
+        name: "Gaming Mouse Pad", 
+        price: 2900, 
+        image: "/placeholder.svg", 
+        rating: 4.7, 
+        category: "accessories",
+        description: "Large gaming mouse pad with smooth surface and anti-slip base",
+        specs: ["XXL size 900x400mm", "Smooth cloth surface", "Anti-slip rubber base", "Stitched edges"]
+      },
+      { 
+        id: 28, 
+        name: "USB-C Cable", 
+        price: 1900, 
+        image: "/placeholder.svg", 
+        rating: 4.4, 
+        category: "accessories",
+        description: "Durable USB-C cable for charging and data transfer",
+        specs: ["3ft/1m length", "480Mbps data transfer", "100W power delivery", "Braided design"]
+      },
     ],
   };
 
@@ -90,36 +350,59 @@ const Index = () => {
     return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
   };
 
-  const ProductCard = ({ product }) => (
-    <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border-2 border-purple-200 hover:border-purple-400">
-      <div className="relative overflow-hidden rounded-t-lg">
-        <img 
-          src={product.image} 
-          alt={product.name}
-          className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-        />
-        <div className="absolute top-2 right-2">
-          <Badge className="bg-gradient-to-r from-pink-500 to-purple-600 text-white">
-            ⭐ {product.rating}
-          </Badge>
+  const ProductCard = ({ product }) => {
+    const handleImageLoad = () => {
+      console.log(`Image loaded successfully: ${product.name}`);
+    };
+
+    const handleImageError = (e) => {
+      console.error(`Failed to load image for ${product.name}:`, e.target.src);
+      e.target.src = '/placeholder.svg';
+    };
+
+    return (
+      <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border-2 border-purple-200 hover:border-purple-400">
+        <div className="relative overflow-hidden rounded-t-lg">
+          <img 
+            src={product.image} 
+            alt={product.name}
+            className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+            onLoad={handleImageLoad}
+            onError={handleImageError}
+            loading="lazy"
+          />
+          <div className="absolute top-2 right-2">
+            <Badge className="bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+              ⭐ {product.rating}
+            </Badge>
+          </div>
         </div>
-      </div>
-      <CardContent className="p-4">
-        <h3 className="font-bold text-lg text-gray-800 mb-2">{product.name}</h3>
-        <div className="flex justify-between items-center">
-          <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            {formatPrice(product.price)}
-          </span>
-          <Button 
-            onClick={() => addToCart(product)}
-            className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white transform hover:scale-105 transition-all duration-200"
-          >
-            Add to Cart
-          </Button>
-        </div>
-      </CardContent>
-    </Card>
-  );
+        <CardContent className="p-4">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">{product.name}</h3>
+          <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description}</p>
+          <div className="mb-3">
+            <h4 className="font-semibold text-sm text-gray-700 mb-1">Key Specs:</h4>
+            <ul className="text-xs text-gray-600 space-y-1">
+              {product.specs?.slice(0, 2).map((spec, index) => (
+                <li key={index}>• {spec}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              {formatPrice(product.price)}
+            </span>
+            <Button 
+              onClick={() => addToCart(product)}
+              className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white transform hover:scale-105 transition-all duration-200"
+            >
+              Add to Cart
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  };
 
   const CategorySection = ({ title, products, icon: Icon, gradient }) => (
     <section id={title.toLowerCase().replace(' ', '')} className="py-16">
@@ -148,7 +431,6 @@ const Index = () => {
             <div className="font-bold text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               TechTonic
             </div>
-            
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
               {['Home', 'Phones', 'Laptops', 'Smartwatches', 'Gaming', 'Audio', 'Accessories', 'Contact'].map((item) => (
@@ -163,6 +445,26 @@ const Index = () => {
             </div>
 
             <div className="flex items-center space-x-4">
+              {/* Contact Buttons */}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleEmailContact}
+                className="border-2 border-blue-300 text-blue-600 hover:bg-blue-50"
+              >
+                <Mail className="w-4 h-4 mr-1" />
+                Email
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleWhatsAppContact}
+                className="border-2 border-green-300 text-green-600 hover:bg-green-50"
+              >
+                <MessageCircle className="w-4 h-4 mr-1" />
+                WhatsApp
+              </Button>
+
               <div className="relative">
                 <Button variant="outline" className="relative border-2 border-purple-300 hover:border-purple-500 text-purple-600 hover:text-purple-700">
                   <ShoppingCart className="w-5 h-5" />
@@ -200,6 +502,26 @@ const Index = () => {
                   {item}
                 </a>
               ))}
+              <div className="flex gap-2 py-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleEmailContact}
+                  className="border-2 border-blue-300 text-blue-600"
+                >
+                  <Mail className="w-4 h-4 mr-1" />
+                  Email
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleWhatsAppContact}
+                  className="border-2 border-green-300 text-green-600"
+                >
+                  <MessageCircle className="w-4 h-4 mr-1" />
+                  WhatsApp
+                </Button>
+              </div>
             </div>
           </div>
         )}
@@ -327,94 +649,39 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-red-500">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
-            <p className="text-purple-100 text-lg">Have questions? We'd love to hear from you!</p>
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Contact Form */}
-            <div>
-              <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-gray-800">Send us a Message</CardTitle>
-                  <CardDescription>Fill out the form below and we'll get back to you soon</CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <Label htmlFor="name" className="text-gray-700 font-medium">Name</Label>
-                        <Input id="name" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
-                      </div>
-                      <div>
-                        <Label htmlFor="email" className="text-gray-700 font-medium">Email</Label>
-                        <Input id="email" type="email" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
-                      </div>
-                    </div>
-                    <div>
-                      <Label htmlFor="subject" className="text-gray-700 font-medium">Subject</Label>
-                      <Input id="subject" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
-                    </div>
-                    <div>
-                      <Label htmlFor="message" className="text-gray-700 font-medium">Message</Label>
-                      <textarea 
-                        id="message" 
-                        rows={4} 
-                        className="mt-2 w-full px-3 py-2 border-2 border-purple-200 rounded-md focus:border-purple-500 focus:outline-none"
-                      />
-                    </div>
-                    <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg py-3">
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
+              <p className="text-purple-100 text-lg">Have questions? We'd love to hear from you!</p>
             </div>
-
-            {/* Contact Information */}
-            <div className="space-y-6">
-              <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-gray-800">Contact Information</CardTitle>
-                  <CardDescription>Reach out to us through any of these channels</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full">
-                      <Phone className="w-6 h-6 text-white" />
+            
+            <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
+              <CardContent className="p-8">
+                <form className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <Label htmlFor="name" className="text-gray-700 font-medium">Name</Label>
+                      <Input id="name" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Phone</p>
-                      <p className="text-gray-600">+254 741 645 021</p>
+                      <Label htmlFor="email" className="text-gray-700 font-medium">Email</Label>
+                      <Input id="email" type="email" className="mt-2 border-2 border-purple-200 focus:border-purple-500" />
                     </div>
                   </div>
-                  
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full">
-                      <Mail className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">info@techtonic.co.ke</p>
-                      <p className="text-gray-600">techtonic792@gmail.com</p>
-                    </div>
+                  <div>
+                    <Label htmlFor="message" className="text-gray-700 font-medium">Message</Label>
+                    <textarea 
+                      id="message" 
+                      rows={4} 
+                      className="mt-2 w-full px-3 py-2 border-2 border-purple-200 rounded-md focus:border-purple-500 focus:outline-none"
+                    />
                   </div>
-                  
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-full">
-                      <Clock className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Business Hours</p>
-                      <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                      <p className="text-gray-600">Saturday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Sunday: Closed</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+                  <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg py-3">
+                    Send Message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
