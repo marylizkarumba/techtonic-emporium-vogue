@@ -18,7 +18,7 @@ const Index = () => {
 
   // Contact handler functions
   const handleEmailContact = () => {
-    window.open('mailto:info@techtonic.co.ke?subject=Product Inquiry&body=Hello, I would like to inquire about your products.', '_blank');
+    window.open('mailto:techtonic792@gmail.com?subject=Product Inquiry&body=Hello, I would like to inquire about your products.', '_blank');
   };
 
   const handleWhatsAppContact = () => {
