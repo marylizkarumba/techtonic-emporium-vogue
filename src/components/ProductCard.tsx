@@ -18,10 +18,16 @@ interface Product {
 interface ProductCardProps {
   product: Product;
   onAddToCart: (product: Product) => void;
+  onProductClick: (product: Product) => void;
   formatPrice: (price: number) => string;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, formatPrice }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ 
+  product, 
+  onAddToCart, 
+  onProductClick, 
+  formatPrice 
+}) => {
   const handleImageLoad = () => {
     console.log(`Image loaded successfully: ${product.name}`);
   };
@@ -31,8 +37,20 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, 
     e.currentTarget.src = '/placeholder.svg';
   };
 
+  const handleCardClick = () => {
+    onProductClick(product);
+  };
+
+  const handleAddToCartClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent card click when clicking add to cart
+    onAddToCart(product);
+  };
+
   return (
-    <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border-2 border-purple-200 hover:border-purple-400">
+    <Card 
+      className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border-2 border-purple-200 hover:border-purple-400 cursor-pointer"
+      onClick={handleCardClick}
+    >
       <div className="relative overflow-hidden rounded-t-lg">
         <img 
           src={product.image} 
@@ -58,13 +76,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, 
               <li key={index}>• {spec}</li>
             ))}
           </ul>
+          {product.specs?.length > 2 && (
+            <p className="text-xs text-purple-600 font-medium mt-1">
+              Click to see all {product.specs.length} specifications
+            </p>
+          )}
         </div>
         <div className="flex justify-between items-center">
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             {formatPrice(product.price)}
           </span>
           <Button 
-            onClick={() => onAddToCart(product)}
+            onClick={handleAddToCartClick}
             className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white transform hover:scale-105 transition-all duration-200"
           >
             Add to Cart

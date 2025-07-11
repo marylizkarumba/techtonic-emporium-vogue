@@ -20,6 +20,7 @@ interface CategorySectionProps {
   icon: LucideIcon;
   gradient: string;
   onAddToCart: (product: Product) => void;
+  onProductClick: (product: Product) => void;
   formatPrice: (price: number) => string;
 }
 
@@ -29,6 +30,7 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
   icon: Icon, 
   gradient, 
   onAddToCart, 
+  onProductClick,
   formatPrice 
 }) => (
   <section id={title.toLowerCase().replace(' ', '')} className="py-16">
@@ -45,6 +47,7 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
             key={product.id} 
             product={product} 
             onAddToCart={onAddToCart}
+            onProductClick={onProductClick}
             formatPrice={formatPrice}
           />
         ))}
