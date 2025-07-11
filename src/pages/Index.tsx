@@ -34,13 +34,13 @@ const Index = () => {
     phones: [
       { 
         id: 1, 
-        name: "iPhone 15 Pro", 
-        price: 140000, 
-        image: "/images/iphone-15-pro.jpg", 
+        name: "Tecno-spark 30", 
+        price: 21500, 
+        image: "/images/tecno-spark 30.jpg", 
         rating: 4.8, 
         category: "phones",
-        description: "Latest iPhone with A17 Pro chip, titanium design, and advanced camera system",
-        specs: ["6.1-inch Super Retina XDR display", "A17 Pro chip", "48MP main camera", "128GB storage"]
+        description: "The Tecno Spark 30 is a budget-friendly smartphone and has an advanced camera system",
+        specs: ["Display: 6.78-inch FHD", "OS: Android 14", "Chip: MediaTek Helio G91", "RAM: 8GB", "Internal Storage: 128/256GB", "Front Camera: 13MP", "Main Camera: 64MP", "Connectivity: 4G, NFC, Infrared, Bluetooth, Wi-Fi", "Battery: It comes with a 5,000mAh battery that supports 18W fast charging, ensuring long battery life and quick recharges"]
       },
       { 
         id: 2, 
