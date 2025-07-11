@@ -111,7 +111,7 @@ const Index = () => {
       { 
         id: 7, 
         name: "Lenovo Thinkpad X280", 
-        price: 40000, 
+        price: 28000, 
         image: "/images/lenovo-thinkpad x280.jpg", 
         rating: 4.7, 
         category: "laptops",
