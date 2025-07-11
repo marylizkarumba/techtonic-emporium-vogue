@@ -90,7 +90,7 @@ const Index = () => {
       { 
         id: 5, 
         name: "HP EliteBook 840 Aero G8", 
-        price: 120000, 
+        price: 50000, 
         image: "/images/HP Elitebook 840.jpg", 
         rating: 4.9, 
         category: "laptops",
@@ -100,33 +100,37 @@ const Index = () => {
       },
       { 
         id: 6, 
-        name: "Dell XPS 13D", 
-        price: 65000, 
-        image: "/images/dell-xps-13d.jpg", 
+        name: "Lenovo ThinkPad Yoga 370", 
+        price: 45000, 
+        image: "/images/Lenovo ThinkPad.jpg", 
         rating: 4.6, 
         category: "laptops",
-        description: "Ultra-portable Windows laptop with premium build quality",
-        specs: ["13.4-inch FHD+ display", "Intel Core i7", "16GB RAM", "512GB SSD"]
+        description: "Lenovo ThinkPad Yoga 370 Intel Core i7 7th Gen 16GB RAM 512GB SSD 13.3 Inches FHD Display",
+        specs: ["Processor: Intel Core i7 7th Gen", "Memory: 16GB RAM","Storage: 512GB SSD","Display: 13.3-inch Full HD touchscreen","Graphics: Intel HD Graphics 620","Operating System: Windows 10 Pro","Ports: USB 3.0, USB Type-C, HDMI, MicroSD reader","Security: Fingerprint reader","Battery: Up to 12 hours","Weight: 1.43 kg (3.15 lbs)"]
       },
       { 
         id: 7, 
-        name: "Lenovo Thinkpad Corei7", 
-        price: 55000, 
-        image: "/images/lenovo-thinkpad-i7.jpg", 
+        name: "Lenovo Thinkpad X280", 
+        price: 40000, 
+        image: "/images/lenovo-thinkpad x280.jpg", 
         rating: 4.7, 
         category: "laptops",
-        description: "Business laptop with legendary durability and security features",
-        specs: ["14-inch FHD display", "Intel Core i7", "16GB RAM", "512GB SSD"]
+        description: "Lenovo Thinkpad X280 Intel Core i5-8250U 8GB RAM 256GB SSD 12.5inch HD Business laptop with legendary durability and security features",
+        specs: ["Processor: Intel Core i5-8250U","Graphics: Intel UHD Graphics 620","Display: 12.5-inch HD (1366 x 768) TN", "Storage: 256GB SSD", "Memory: 8GB DDR4 RAM", "Operating System: Windows 10 Pro", "Portability: Lightweight at 1.13 kg (2.5 lbs)", "Connectivity: Includes USB Type-C (Thunderbolt 3, DisplayPort, HDMI), USB Type-A, Ethernet, Wi-Fi, Bluetooth", "Build Material: Combination of Aluminum, Carbon, Glass Fiber, and Magnesium alloy", "Security: Fingerprint reader, Security Lock slot"]
       },
       { 
         id: 8, 
-        name: "Hp Elitebook 840", 
-        price: 41000, 
-        image: "/images/hp-elitebook-840.jpg", 
+        name: "Dell Latitude", 
+        price: 50000, 
+        image: "/images/Dell Latitude.jpg", 
         rating: 4.5, 
         category: "laptops",
-        description: "Professional business laptop with enterprise security and performance",
-        specs: ["14-inch FHD display", "Intel Core i5", "8GB RAM", "256GB SSD"]
+        description: "Compact, Powerful, and Reliable: The Dell Latitude 5300 is designed for professionals seeking a balance between performance, portability, and functionality. With a powerful 8th Gen Intel Core i7 processor, generous memory, and advanced storage options, this laptop is built to handle demanding business applications and multitasking effortlessly",
+        specs: ["Processor: 8th Gen Intel Core i7 (Quad-Core, up to 4.6 GHz with Turbo Boost)", "Display: 13.3-inch Full HD (1920 x 1080) Anti-Glare Display with IPS technology", "Memory: 16GB DDR4 RAM (expandable for future requirements)", "Storage: 512GB PCIe NVMe M.2 SSD for lightning-fast boot times and efficient data access", "Graphics: Integrated Intel UHD 620 Graphics for smooth visuals and light graphical tasks", "Operating System: FreeDOS (Ready for your preferred OS installation)", "Connectivity:Intel Wi-Fi 6 (802.11ax)Bluetooth 5.0, USB-C with Power Delivery and DisplayPort2x USB 3.1 Gen 1 (Type-A)HDMI 1.4b,RJ-45 Ethernet port,MicroSD card reader, 3.5mm headphone/microphone combo jack", 
+"Camera: HD Webcam with privacy features",
+"Audio: Integrated stereo speakers with Waves MaxxAudio Pro",
+"Keyboard: Backlit, spill-resistant keyboard for convenience and durability",
+"Battery: 4-cell, 60Wh battery with ExpressCharge technology for quick recharging"]
       },
     ],
     smartwatches: [
