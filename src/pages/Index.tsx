@@ -77,25 +77,26 @@ const Index = () => {
       },
       { 
         id: 4, 
-        name: "Realme C75", 
-        price: 26500, 
-        image: "/images/realme-c75.jpg", 
+        name: "Tecno Camon 40", 
+        price: 35000, 
+        image: "/images/tecno-camon 40.jpg", 
         rating: 4.5, 
         category: "phones",
         description: "Budget-friendly smartphone with reliable performance and long battery life",
-        specs: ["6.72-inch HD+ display", "UNISOC Tiger T606", "50MP dual camera", "128GB storage"]
+        specs: ["RAM: 8GB", "Internal Storage: 128GB, 256GB","Display: 6.78 inches, AMOLED","OS: Android 15, HIOS 15","Chipset: Mediatek Helio G100 Ultimate (6 nm)","Main Camera: 50MP + 8MP","Selfie Lens: 32MP","Network: 4G","Battery: 5200mAh, 45W wired, 50% in 23 min, 100% in 43 min","Colors: Emerald Lake Green, Galaxy Black, Glacier White, Emerald Glow Green"]
       },
     ],
     laptops: [
       { 
         id: 5, 
-        name: "MacBook Pro", 
+        name: "HP EliteBook 840 Aero G8", 
         price: 120000, 
-        image: "/images/macbook-pro.jpg", 
+        image: "/images/HP Elitebook 840.jpg", 
         rating: 4.9, 
         category: "laptops",
-        description: "Professional laptop with M3 chip for ultimate performance and battery life",
-        specs: ["14-inch Liquid Retina XDR", "Apple M3 chip", "8GB unified memory", "512GB SSD"]
+        description: "HP EliteBook 840 Aero G8 Notebook PC 11th Generation Intel Core i5-1135G7 Processor 32GB DDR4-3200 SDRAM RAM 512GB SSD Storage 14″ FHD Display Iris XeGraphics Audio by Bang & Olufsen",
+        specs: ["Processor: 11th Generation Intel Core i5-1135G7 (4 cores, 8 threads, 2.4 GHz base, up to 4.2 GHz turbo)","Memory: 32GB DDR4-3200 SDRAM","Storage: 512GB SSD (Solid State Drive)","Display: 14″ Full HD (1920×1080) Anti-glare, LED-backlit display","Graphics: Intel Iris Xe Graphics","Audio: Bang & Olufsen audio technology",
+"Webcam: 720p HD IR Camera for facial recognition","Security: Fingerprint reader, TPM 2.0, Privacy Camera Shutter","Operating System: Windows 10 Pro"]
       },
       { 
         id: 6, 
