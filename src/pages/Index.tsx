@@ -57,23 +57,23 @@ const Index = () => {
       },
       { 
         id: 2, 
-        name: "Samsung Galaxy S23 ultra", 
-        price: 112000, 
-        image: "/images/samsung-galaxy-s23-ultra.jpg", 
+        name: "Tecno-spark 20", 
+        price: 25000, 
+        image: "/images/tecno-spark 20.jpg", 
         rating: 4.7, 
         category: "phones",
-        description: "Flagship Android phone with S Pen and exceptional camera performance",
-        specs: ["6.8-inch Dynamic AMOLED 2X", "Snapdragon 8 Gen 2", "200MP quad camera", "256GB storage"]
+        description: "The Tecno Spark 20 is a budget-friendly smartphone with a focus on photography and performance",
+        specs: ["Display: 6.6-inch IPS LCD with a 90Hz refresh rate, 720 x 1612 pixels resolution", "Processor: MediaTek Helio G85", "RAM: 8GB, with options for 128GB or 256GB internal storage, expandable via microSDXC", "Cameras: 50MP main rear camera, 32MP front-facing camera", "Battery: 5000mAh with 18W fast charging", "Operating System: Android 13", "Other Features: Side-mounted fingerprint sensor, dual SIM support, 4G LTE, Wi-Fi, Bluetooth, FM Radio, USB Type-C", "Design: Minimalist aesthetics with a three-ring design and sleek metal edges", "Colors: Available in Gravity Black, Cyber White, Magic Skin Blue, and Neon Gold"]
       },
       { 
         id: 3, 
-        name: "Google Pixel 8", 
-        price: 65000, 
-        image: "/images/google-pixel-8.jpg", 
+        name: "Tecno Camon 30", 
+        price: 31500, 
+        image: "/images/tecno-camon 30.jpg", 
         rating: 4.6, 
         category: "phones",
-        description: "Pure Android experience with exceptional computational photography",
-        specs: ["6.2-inch OLED display", "Google Tensor G3", "50MP main camera", "128GB storage"]
+        description: "The Tecno Camon 30 is a budget-friendly smartphone featuring a large 6.78-inch display with a 90Hz refresh rate a 64MP main camera and a 13MP front camera with dual-tone flash",
+        specs: ["Display: 6.78-inch FHD+ IPS LCD, 90Hz refresh rate", "OS: Android 14 with HIOS 14", "Chip: MediaTek Helio G91", "RAM: 8GB", "Internal Storage: 128GB / 256GB (expandable via microSD)", "Front Camera: 13MP with dual-LED flash", "Main Camera: 64MP Sony IMX682 sensor", "Connectivity: 4G LTE, NFC, Bluetooth, Wi-Fi", "Battery: 5,000mAh with 18W fast charging support", "Audio: Dual stereo speakers with Dolby Atmos", "Build: Glass front, plastic frame, eco-leather back option", "Durability: IP64 water and dust resistant", "Special Edition: Bumblebee Transformers-themed version available"]
       },
       { 
         id: 4, 
