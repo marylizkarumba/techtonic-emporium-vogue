@@ -36,7 +36,7 @@ const Index = () => {
         id: 1, 
         name: "Tecno-spark 30", 
         price: 21500, 
-        image: "/images/tecno-spark 30.jpeg", 
+        image: "/images/tecno-spark 30.jpg", 
         rating: 4.8, 
         category: "phones",
         description: "The Tecno Spark 30 is a budget-friendly smartphone and has an advanced camera system",
