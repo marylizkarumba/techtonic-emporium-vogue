@@ -262,18 +262,18 @@ const Index = () => {
     accessories: [
       { 
         id: 21, 
-        name: "MagSafe Charger", 
-        price: 3900, 
-        image: "/images/magsafe-charger.jpg", 
+        name: "Epson EcoTank L3250", 
+        price: 25000, 
+        image: "/images/Epson EcoTank L3250.jpg", 
         rating: 4.5, 
         category: "accessories",
-        description: "Wireless charging pad with magnetic alignment for iPhone",
-        specs: ["15W wireless charging", "Magnetic alignment", "USB-C connector", "iPhone 12+ compatible"]
+        description: "The multi-functional EcoTank L3250 is designed to improve business cost savings and print productivity. Expect a high print yield of up to 4,500 pages for black-and-white, and 7,500 pages for colour.",
+        specs: ["General Specifications", "Print, scan, copy", "Compact integrated tank design", "High yield ink bottles", "Spill-free, error-free refilling", "Wi-Fi & Wi-Fi Direct", "Seamless setup via Epson Smart Panel", "Borderless printing up to 4R", "Powered by Epson Heat-Free Technology"]
       },
       { 
         id: 22, 
         name: "OraimoPowerBank", 
-        price: 4900, 
+        price: 25000, 
         image: "/images/oraimo-powerbank.jpg", 
         rating: 4.6, 
         category: "accessories",
