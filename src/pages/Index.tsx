@@ -6,10 +6,13 @@ import { CategorySection } from '../components/CategorySection';
 import { ContactSection } from '../components/ContactSection';
 import { Footer } from '../components/Footer';
 import { ShoppingCartDisplay } from '../components/ShoppingCart';
+import { ProductModal } from '../components/ProductModal';
 
 const Index = () => {
   const [cartItems, setCartItems] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const formatPrice = (price) => {
     return `KSh ${price.toLocaleString('en-KE')}`;
@@ -28,6 +31,16 @@ const Index = () => {
 
   const handlePhoneCall = () => {
     window.open('tel:+254741645021', '_self');
+  };
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
   };
 
   const products = {
@@ -371,6 +384,7 @@ const Index = () => {
         icon={Phone}
         gradient="bg-gradient-to-r from-blue-500 to-cyan-500"
         onAddToCart={addToCart}
+        onProductClick={handleProductClick}
         formatPrice={formatPrice}
       />
       
@@ -380,6 +394,7 @@ const Index = () => {
         icon={Laptop}
         gradient="bg-gradient-to-r from-purple-500 to-pink-500"
         onAddToCart={addToCart}
+        onProductClick={handleProductClick}
         formatPrice={formatPrice}
       />
       
@@ -389,6 +404,7 @@ const Index = () => {
         icon={Watch}
         gradient="bg-gradient-to-r from-green-500 to-teal-500"
         onAddToCart={addToCart}
+        onProductClick={handleProductClick}
         formatPrice={formatPrice}
       />
       
@@ -398,6 +414,7 @@ const Index = () => {
         icon={Gamepad2}
         gradient="bg-gradient-to-r from-red-500 to-orange-500"
         onAddToCart={addToCart}
+        onProductClick={handleProductClick}
         formatPrice={formatPrice}
       />
       
@@ -407,6 +424,7 @@ const Index = () => {
         icon={Headphones}
         gradient="bg-gradient-to-r from-indigo-500 to-purple-500"
         onAddToCart={addToCart}
+        onProductClick={handleProductClick}
         formatPrice={formatPrice}
       />
       
@@ -416,6 +434,7 @@ const Index = () => {
         icon={Cable}
         gradient="bg-gradient-to-r from-pink-500 to-rose-500"
         onAddToCart={addToCart}
+        onProductClick={handleProductClick}
         formatPrice={formatPrice}
       />
 
@@ -433,6 +452,14 @@ const Index = () => {
       />
 
       <Footer />
+
+      <ProductModal
+        product={selectedProduct}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onAddToCart={addToCart}
+        formatPrice={formatPrice}
+      />
     </div>
   );
 };
