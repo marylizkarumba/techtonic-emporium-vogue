@@ -156,13 +156,13 @@ const Index = () => {
       },
       { 
         id: 11, 
-        name: "Garmin Forerunner 955", 
-        price: 50000, 
-        image: "/images/garmin-forerunner-955.jpg", 
+        name: "Oraimo Watch 5", 
+        price: 3200, 
+        image: "/images/Oraimo Watch 5.jpg", 
         rating: 4.7, 
         category: "smartwatches",
-        description: "GPS running watch with advanced training features",
-        specs: ["1.3-inch MIP display", "Multi-band GPS", "VO2 max tracking", "32GB storage"]
+        description: "Oraimo Watch 5N 2.01'' TFT IP68 Smart Watch",
+        specs: ["Display Screen: 2.01 TFT 240*296","BT Version: V5.3","Material: ABS/PC/Silica gel","Battery Capacity: 300mAh","Battery Type: Lithium polymer","Rated Voltage: 5V","Charging Time: 3 hours","Normal Usage Time: 7 days","Standby Time: More than 30 days","Watch Size: 47.8*39.2*10.95mm","Waterproof: IP68","*oraimo Lab test results","Model: OSW-806N"]
       },
       { 
         id: 12, 
@@ -220,23 +220,23 @@ const Index = () => {
     audio: [
       { 
         id: 17, 
-        name: "AirPods", 
-        price: 25000, 
+        name: "Oraimo OpenSnap", 
+        price: 2000, 
         image: "/images/airpods-pro.jpg", 
         rating: 4.8, 
         category: "audio",
-        description: "Premium wireless earbuds with active noise cancellation",
-        specs: ["H2 chip", "Active Noise Cancellation", "Spatial Audio", "6 hours playback"]
+        description: "Oraimo OpenSnap N Clip-On Open-Ear True Wireless EarbudsPremium wireless earbuds with active noise cancellation",
+        specs: [" Comfortable and Secure Fit","Clear Voice in Calls", "16-Hour Long Battery Life", "Customize Your Listening", "*If the charging case is fully recharged,it can charge the earbuds about 3 times.*oraimo Lab test results"]
       },
       { 
         id: 18, 
-        name: "Sony WH-1000XM5", 
-        price: 40000, 
-        image: "/images/sony-wh-1000xm5.jpg", 
+        name: "Oraimo BoomPop Headphones", 
+        price: 3500, 
+        image: "/images/Oraimo BoomPop Headphones.jpg", 
         rating: 4.7, 
         category: "audio",
-        description: "Industry-leading noise canceling wireless headphones",
-        specs: ["30mm drivers", "Industry-leading ANC", "30-hour battery", "Quick charge"]
+        description: "Oraimo BoomPop 2 ENC Over-Ear Wireless Headphones Industry-leading noise canceling wireless headphones",
+        specs: [" Powerful Bass", "60-hr-Playtime", "AniFast™ Fast Charging", "ENC HD Voice in Calls"]
       },
       { 
         id: 19, 
@@ -272,13 +272,13 @@ const Index = () => {
       },
       { 
         id: 22, 
-        name: "OraimoPowerBank", 
-        price: 25000, 
+        name: "Oraimo PowerBank", 
+        price: 2100, 
         image: "/images/oraimo-powerbank.jpg", 
         rating: 4.6, 
         category: "accessories",
-        description: "High-capacity portable charger with fast charging technology",
-        specs: ["20000mAh capacity", "22.5W fast charging", "Multiple ports", "LED indicator"]
+        description: "Oraimo Traveler Link 20 20000mAh 12W Power Bank High-capacity portable charger with fast charging technology",
+        specs: [" 2.4A Max Fast Charging", "4 Built-in Charging&Recharging Cables", "Up to 5 Phone Charges", "4 Outputs"]
       },
       { 
         id: 23, 
