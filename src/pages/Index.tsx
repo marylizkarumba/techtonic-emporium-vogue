@@ -147,12 +147,12 @@ const Index = () => {
       { 
         id: 10, 
         name: "Samsung Galaxy Watch 6", 
-        price: 32000, 
-        image: "/images/samsung-galaxy-watch-6.jpg", 
+        price: 24000, 
+        image: "/images/Samsung-Galaxy-Watch-6.jpg", 
         rating: 4.6, 
         category: "smartwatches",
         description: "Comprehensive health monitoring with long battery life",
-        specs: ["44mm Super AMOLED display", "Exynos W930", "Sleep tracking", "4G LTE"]
+        specs: ["Color:  Graphite, Silver, Gold","Screen Size: 1.5-inch, 1.3 inch","Resolution: 480 x 480 pixels (~453 ppi density)","Internal Storage: 16 GB","RAM: 2 GB","OS: Android Wear OS 4, One UI Watch 5","Processor: Exynos W930","Dimension: 42.8 x 44.4 x 9 mm","Battery: 425 mAh, 10W wireless","Water resistance: IP68 Certified Rating"]
       },
       { 
         id: 11, 
