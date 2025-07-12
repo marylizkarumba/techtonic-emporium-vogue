@@ -60,7 +60,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-800">Phone</h3>
-                      <p className="text-green-600 font-medium">+254 741 645 021</p>
+                      <p className="text-green-600 font-medium">+254 797552830</p>
                       <Button
                         variant="link"
                         className="p-0 h-auto text-green-500 hover:text-green-700"
@@ -78,7 +78,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-800">WhatsApp</h3>
-                      <p className="text-emerald-600 font-medium">+254 741 645 021</p>
+                      <p className="text-emerald-600 font-medium">+254 797552830</p>
                       <Button
                         variant="link"
                         className="p-0 h-auto text-emerald-500 hover:text-emerald-700"
