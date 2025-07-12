@@ -289,7 +289,6 @@ const Index = () => {
         rating: 4.7, 
         category: "accessories",
         description: "The Epson L850 photo all-in-one ink tank printer is a multi-functional borderless photo printer with savings. Imaging enthusiasts and professionals can look forward to the 6-color ink tank system, presenting vibrant borderless prints and unrivaled performance at a remarkably low cost through this 3-in-1 photo printer.", 
-        price: 80000, 
         specs: ["High-yield ink bottles", "2.7 color LCD screen", "Direct printing via memory card slot, USB port, and PictBridge", "CD/DVD printing"]
       },
       { 
