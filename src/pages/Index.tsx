@@ -24,13 +24,13 @@ const Index = () => {
   };
 
   const handleWhatsAppContact = () => {
-    const phoneNumber = '254741645021';
+    const phoneNumber = '254797552830';
     const message = 'Hello! I would like to inquire about your tech products.';
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handlePhoneCall = () => {
-    window.open('tel:+254741645021', '_self');
+    window.open('tel:+254797552830', '_self');
   };
 
   const handleProductClick = (product) => {
@@ -194,7 +194,7 @@ const Index = () => {
         image: "/images/Xbox-S-Series.jpg", 
         rating: 4.8, 
         category: "gaming",
-        description: "The Xbox S Series is Microsoft’s most extensive digital game library yet, all at a great price. The console boasts a high dynamic range, X Box Velocity Architecture, and up to 120 frames per second video. Xbox Series S is the smallest, sleekest Xbox ever. ",
+        description: "The Xbox S Series is Microsoft's most extensive digital game library yet, all at a great price. The console boasts a high dynamic range, X Box Velocity Architecture, and up to 120 frames per second video. Xbox Series S is the smallest, sleekest Xbox ever. ",
         specs: ["Dimensions: 96*358*216mm", "Internal Built-in Storage: 512GB", "Memory interface: 16GB GDDR6 / 256-bit.", "CPU: AMD Zen 2-based CPU with eight cores at 3.5GHz (variable frequency)", "GPU architecture: Custom RDNA 2."]
       },
       { 
@@ -204,7 +204,7 @@ const Index = () => {
         image: "/images/PlayStation-4-slim.jpg", 
         rating: 4.7, 
         category: "gaming",
-        description: "PS4 500GB Console is Wi-Fi and Bluetooth enabled, making it easy to go online with friends. PS4 Console’s HDR technology improves your games’ contrast and range of colors. Thus, images look more vibrant than ever. To maximize your immersion and user experience, you need an HDR-enabled TV to enjoy the full benefit of PS4-compatible games. The console also works with PlayStation VR (note: headset and camera sold separately).",
+        description: "PS4 500GB Console is Wi-Fi and Bluetooth enabled, making it easy to go online with friends. PS4 Console's HDR technology improves your games' contrast and range of colors. Thus, images look more vibrant than ever. To maximize your immersion and user experience, you need an HDR-enabled TV to enjoy the full benefit of PS4-compatible games. The console also works with PlayStation VR (note: headset and camera sold separately).",
         specs: ["Color: Black", "Weight: 261g", "HDR Game Streaming", "HDR auto-upscaling", "Internal Storage: 500GB Storage", "RAM: 8GB RAM", "Battery: 1 Lithium Polymer batteries required"]
       },
       { 
