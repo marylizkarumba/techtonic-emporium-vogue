@@ -283,13 +283,14 @@ const Index = () => {
       },
       { 
         id: 23, 
-        name: "Logitech MX Master 3", 
+        name: "Epson L850", 
         price: 9900, 
-        image: "/images/logitech-mx-master-3.jpg", 
+        image: "/images/Epson L850.jpg", 
         rating: 4.7, 
         category: "accessories",
-        description: "Advanced wireless mouse for productivity and precision",
-        specs: ["4000 DPI sensor", "70-day battery", "USB-C charging", "Cross-computer control"]
+        description: "The Epson L850 photo all-in-one ink tank printer is a multi-functional borderless photo printer with savings. Imaging enthusiasts and professionals can look forward to the 6-color ink tank system, presenting vibrant borderless prints and unrivaled performance at a remarkably low cost through this 3-in-1 photo printer.", 
+        price: 80000, 
+        specs: ["High-yield ink bottles", "2.7 color LCD screen", "Direct printing via memory card slot, USB port, and PictBridge", "CD/DVD printing"]
       },
       { 
         id: 24, 
@@ -303,23 +304,23 @@ const Index = () => {
       },
       { 
         id: 25, 
-        name: "Type-C Charger", 
+        name: "Oraimo Powercube 2", 
         price: 3900, 
-        image: "/images/type-c-charger.jpg", 
+        image: "/images/Oraimo-Powercube-2.jpg", 
         rating: 4.5, 
         category: "accessories",
-        description: "Fast charging USB-C adapter with multiple safety features",
-        specs: ["65W fast charging", "GaN technology", "Universal compatibility", "Compact design"]
+        description: "Oraimo Fast Charging Wall Charger OCW-E65S is a Charger with a type-C data cable that is supported by fast charging technology so as to provide efficient and maximum battery charging speed Advantages: Fast Charging technology provides efficient and maximum battery charging speed Safe charging",
+        specs: ["Colour: Black", "Interface: USB to USB Type-C", "Charger Type: Wall Charger", "Plug Type: USB", "Output: 5V/2A", "Length: 1 meter"]
       },
       { 
         id: 26, 
-        name: "Oraimo PowerBank", 
-        price: 4900, 
-        image: "/images/oraimo-powerbank-2.jpg", 
+        name: "Oraimo PowerBOX", 
+        price: 7500, 
+        image: "/images/Oraimo PowerBox 600.jpg", 
         rating: 4.6, 
         category: "accessories",
-        description: "Reliable portable power bank with fast charging capabilities",
-        specs: ["10000mAh capacity", "18W fast charging", "Dual USB ports", "LED power display"]
+        description: "Oraimo PowerBox 600 OPB-P600Q 60,000mAh Power Banks",
+        specs: ["Ultra-High Capacity: With a 60000mAh (222Wh) battery", "Multiple Outputs: Equipped with five output ports", "22.5W Super Fast Charging and 18W Quick Recharge","LED Display", "AniFast™ Technology"]
       },
       { 
         id: 27, 
