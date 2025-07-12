@@ -136,13 +136,13 @@ const Index = () => {
     smartwatches: [
       { 
         id: 9, 
-        name: "Apple Watch Series 9", 
+        name: "Oraimo Watch Lite", 
         price: 40000, 
-        image: "/images/apple-watch-series-9.jpg", 
+        image: "/images/Oraimo-Watch-Lite.jpg", 
         rating: 4.8, 
         category: "smartwatches",
-        description: "Advanced health tracking with bright display and new S9 chip",
-        specs: ["45mm Always-On Retina display", "S9 SiP chip", "Blood oxygen monitoring", "GPS + Cellular"]
+        description: "Oraimo Watch Lite OSW-18 price in Kenya is Kes 4,000. It features a large and bright 1.69-inch TFT screen with 240*280p resolution. The watch relies on wireless Bluetooth V5.1 connectivity. It has 61 sports modes and 100+ watch faces for your setings. It supports 24 Hours Health Management including Heart Ratem Blood Oxygen, Pressure and Sleep Monitoring. OSW-18 comes with Call and Message reminder, making it easier for you not to miss important notifications and follow up through your handset.  It is waterproof with IP68 rating.",
+        specs: ["Screen Size: 1.69-inch  TFT 240*280p", "Bluetooth Version: V5.1", "Battery Capacity: 290mAh", "Battery Type: Lithium Polymer Battery","Battery Life: 7 Days","Material: ABS /PC/TPU"]
       },
       { 
         id: 10, 
@@ -166,14 +166,14 @@ const Index = () => {
       },
       { 
         id: 12, 
-        name: "Fitbit Versa 4", 
-        price: 20000, 
-        image: "/images/fitbit-versa-4.jpg", 
+        name: "Redmi Watch 5 Active", 
+        price: 7500, 
+        image: "/images/Redmi-Watch-5-Active.jpg", 
         rating: 4.4, 
         category: "smartwatches",
-        description: "Fitness-focused smartwatch with 6+ day battery life",
-        specs: ["1.58-inch AMOLED display", "Built-in GPS", "Heart rate monitoring", "40+ exercise modes"]
-      },
+        description: "The Redmi Watch 5 Active, offers a 2-inch LCD screen and measures 49.1 x 40.4 x 11.4mm. Crafted with a plastic body (sprayed with metal) for enhanced impact resistance and 5 ATM water resistance, this watch is a smart investment. It supports over 140 sports modes with auto-detection and over 200 watch faces to match your style. Connectivity is via Bluetooth, and the device even supports Bluetooth calls. With up to 18 days of battery life on typical usage, it ensures reduced need for frequent charging.",
+        specs: ["Bluetooth Call Support","2-inch LCD Display","5ATM water resistance","140+ workout modes","200+ Watch Faces","Battery Life: 18 days typical use, 12 days heavy use","Colors: Midnight Black, Matte Silver"]    
+  },
     ],
     gaming: [
       { 
