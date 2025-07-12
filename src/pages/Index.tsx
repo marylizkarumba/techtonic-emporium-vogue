@@ -294,18 +294,18 @@ const Index = () => {
       },
       { 
         id: 24, 
-        name: "USB-C Hub", 
-        price: 7900, 
-        image: "/images/usb-c-hub.jpg", 
+        name: "Xbox Wireless Controller", 
+        price: 8000, 
+        image: "/images/Xbox-Wireless-Controller.jpg", 
         rating: 4.4, 
         category: "accessories",
-        description: "Multi-port adapter for modern laptops and devices",
-        specs: ["7-in-1 design", "4K HDMI output", "USB 3.0 ports", "SD card reader"]
+        description: "The Xbox Wireless Controller is designed for comfort and performance, featuring a streamlined design, textured grip, and a hybrid D-pad for enhanced control. It offers up to 40 hours of battery life and can be used wirelessly or with a wired connection using the included USB-C cable.",
+        specs: ["Hybrid D-Pad", "Dedicated Share Button", "Button Mapping", "USB Type-C Port", "3.5mm Audio Jack", "Bluetooth Connectivity", "Sculpted Surface Design", "Textured Grips", "Up to 40 Hours of Battery Life", "Works with Multiple Platforms"]
       },
       { 
         id: 25, 
         name: "Oraimo Powercube 2", 
-        price: 3900, 
+        price: 1500, 
         image: "/images/Oraimo-Powercube-2.jpg", 
         rating: 4.5, 
         category: "accessories",
@@ -334,13 +334,13 @@ const Index = () => {
       },
       { 
         id: 28, 
-        name: "USB-C Cable", 
-        price: 1900, 
-        image: "/images/usb-c-cable.jpg", 
+        name: "Transcend 1TB", 
+        price: 9500, 
+        image: "/images/Transcend Hard-Drive.jpg", 
         rating: 4.4, 
         category: "accessories",
-        description: "Durable USB-C cable for charging and data transfer",
-        specs: ["3ft/1m length", "480Mbps data transfer", "100W power delivery", "Braided design"]
+        description: "Transcend hard drives, particularly their StoreJet series, are known for their ruggedness and high storage capacity. They often feature a durable, anti-shock rubber case and a reinforced internal structure, providing excellent protection against drops and impacts.",
+        specs: ["Capacity: 1TB, 2TB, 4TB", "Color: Iron Gray", "Weight: 189g (2TB), 294g (4TB)", "Compatibility: Microsoft Windows 7 or later; MacOS 10.10 or later", "Operating Voltage: 5V", "Connectivity Interface: USB 3.1 Gen 1 (USB 5Gbps)"]
       },
     ],
   };
