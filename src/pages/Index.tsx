@@ -324,13 +324,13 @@ const Index = () => {
       },
       { 
         id: 27, 
-        name: "Gaming Mouse Pad", 
+        name: "ElimuTab ET04 Pro", 
         price: 2900, 
-        image: "/images/gaming-mouse-pad.jpg", 
+        image: "/images/ElimuTab-ET04-Pro.jpg", 
         rating: 4.7, 
         category: "accessories",
-        description: "Large gaming mouse pad with smooth surface and anti-slip base",
-        specs: ["XXL size 900x400mm", "Smooth cloth surface", "Anti-slip rubber base", "Stitched edges"]
+        description: "The Elimutab ET04 is a kids' tablet designed for educational and entertainment purposes. It features a 7-inch IPS display, 2GB of RAM, and 16GB of internal storage (expandable via microSD). It runs on Android with a special kids' interface, including parental controls. The tablet also has dual cameras (2MP front, 3MP rear), supports phone calls (with SIM card slot), Wi-Fi, and Bluetooth. ",
+        specs: ["RAM: 2GB", "Internal Storage: 32GB", "Display: 7-inch, 1024 x 600p", "OS: Android 12", "Processor: Unisoc SC7731E Quad-core ARM CortexTM A7 1.3GHz", "Primary lens: 3MP", "Selfie Camera: 2.0MP", "Internet: WIFI 802.11 b/g/n 24G","Bluetooth: V4.2", "Band: 2G/GSM:B2+B5", "GSM Connectivity: 3G/WCDMA:B1+B2+B5+B8", "Positioning: GPS + GLONASS", "Battery: 3000mAh/3.85V Lithium."]
       },
       { 
         id: 28, 
