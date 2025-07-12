@@ -137,7 +137,7 @@ const Index = () => {
       { 
         id: 9, 
         name: "Oraimo Watch Lite", 
-        price: 40000, 
+        price: 5000, 
         image: "/images/Oraimo-Watch-Lite.jpg", 
         rating: 4.8, 
         category: "smartwatches",
@@ -178,43 +178,44 @@ const Index = () => {
     gaming: [
       { 
         id: 13, 
-        name: "PS5 Console", 
-        price: 55000, 
-        image: "/images/ps5-console.jpg", 
+        name: "PS5 Slim 1TB", 
+        price: 80000, 
+        image: "/images/PS5-Slim-1TB.jpg", 
         rating: 4.9, 
         category: "gaming",
-        description: "Next-gen gaming console with 4K gaming and ultra-fast SSD",
-        specs: ["Custom AMD Zen 2 CPU", "10.28 TF GPU", "16GB GDDR6 RAM", "825GB SSD"]
+        description: "PlayStation 5 Slim opens up new gaming possibilities you never anticipated. Enjoy super-fast loading with an ultra-fast 1TB SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D2 audio, and a whole new generation of incredible PlayStation games, all with incredible graphics.",
+        specs: ["Processor: 3rd generation AMD Ryzen (Zen 2, 8 cores/16 threads, 3.5 GHz, 7 nm etch)", "Graphics chipset: AMD RDNA 2 Custom",
+"Memory: 16 GB GDDR6", "Indicative power: 10.3 TFLOPs", "Storage: 1 TB removable SSD drive","Optical drive: 4K Blu-ray", "Max resolution: 8K", "Max framerate: 4K/120fps", "Audio: 3D, Tempest engine"]
       },
       { 
         id: 14, 
-        name: "Xbox Series", 
+        name: "Xbox S Series", 
         price: 55000, 
-        image: "/images/xbox-series-x.jpg", 
+        image: "/images/Xbox-S-Series.jpg", 
         rating: 4.8, 
         category: "gaming",
-        description: "Powerful gaming console with backward compatibility",
-        specs: ["Custom AMD Zen 2 CPU", "12 TF GPU", "16GB GDDR6 RAM", "1TB NVMe SSD"]
+        description: "The Xbox S Series is Microsoft’s most extensive digital game library yet, all at a great price. The console boasts a high dynamic range, X Box Velocity Architecture, and up to 120 frames per second video. Xbox Series S is the smallest, sleekest Xbox ever. ",
+        specs: ["Dimensions: 96*358*216mm", "Internal Built-in Storage: 512GB", "Memory interface: 16GB GDDR6 / 256-bit.", "CPU: AMD Zen 2-based CPU with eight cores at 3.5GHz (variable frequency)", "GPU architecture: Custom RDNA 2."]
       },
       { 
         id: 15, 
-        name: "Nintendo Switch OLED", 
-        price: 36000, 
-        image: "/images/nintendo-switch-oled.jpg", 
+        name: "PlayStation 4 Slim", 
+        price: 40000, 
+        image: "/images/PlayStation-4-slim.jpg", 
         rating: 4.7, 
         category: "gaming",
-        description: "Portable gaming console with vibrant OLED screen",
-        specs: ["7-inch OLED screen", "NVIDIA Custom Tegra", "4GB RAM", "64GB internal storage"]
+        description: "PS4 500GB Console is Wi-Fi and Bluetooth enabled, making it easy to go online with friends. PS4 Console’s HDR technology improves your games’ contrast and range of colors. Thus, images look more vibrant than ever. To maximize your immersion and user experience, you need an HDR-enabled TV to enjoy the full benefit of PS4-compatible games. The console also works with PlayStation VR (note: headset and camera sold separately).",
+        specs: ["Color: Black", "Weight: 261g", "HDR Game Streaming", "HDR auto-upscaling", "Internal Storage: 500GB Storage", "RAM: 8GB RAM", "Battery: 1 Lithium Polymer batteries required"]
       },
       { 
         id: 16, 
-        name: "Steam Deck", 
+        name: "JBL Quantum 300 Headphones", 
         price: 40000, 
-        image: "/images/steam-deck.jpg", 
+        image: "/images/JBL-Quantum-300.jpg", 
         rating: 4.6, 
         category: "gaming",
-        description: "Handheld PC gaming device with access to Steam library",
-        specs: ["7-inch LCD touchscreen", "AMD APU", "16GB LPDDR5 RAM", "256GB NVMe SSD"]
+        description: "Get a more immersive gaming experience with the JBL Quantum 300.",
+        specs: ["Earpiece Connection: Wired", "Number of Earpieces: Dual Earpiece", "Magnet Type: Neodymium", "Driver Type:  Dynamic", "Driver Size:  1.97″ / 50 mm", "Microphone: Adjustable Boom, Left Earpiece", "Frequency Response: 20 Hz to 20 kHz"]
       },
     ],
     audio: [
@@ -222,7 +223,7 @@ const Index = () => {
         id: 17, 
         name: "Oraimo OpenSnap", 
         price: 2000, 
-        image: "/images/airpods-pro.jpg", 
+        image: "/images/Oraimo OpenSnap.jpg", 
         rating: 4.8, 
         category: "audio",
         description: "Oraimo OpenSnap N Clip-On Open-Ear True Wireless EarbudsPremium wireless earbuds with active noise cancellation",
