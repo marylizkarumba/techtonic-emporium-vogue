@@ -325,7 +325,7 @@ const Index = () => {
       { 
         id: 27, 
         name: "ElimuTab ET04 Pro", 
-        price: 2900, 
+        price: 11500, 
         image: "/images/ElimuTab-ET04-Pro.jpg", 
         rating: 4.7, 
         category: "accessories",
