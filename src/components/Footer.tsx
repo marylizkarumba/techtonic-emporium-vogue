@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
             <span className="text-gray-300">techtonic792@gmail.com</span>
             <span className="text-gray-500">|</span>
             <Phone className="w-5 h-5 text-cyan-400" />
-            <span className="text-gray-300">+254 741 645 021</span>
+            <span className="text-gray-300">+254 797552830</span>
           </div>
           <p className="text-gray-400">&copy; 2025 TechTonic. All rights reserved.</p>
         </div>
