@@ -242,21 +242,21 @@ const Index = () => {
         id: 19, 
         name: "Bose QuietComfort", 
         price: 34000, 
-        image: "/images/bose-quietcomfort.jpg", 
+        image: "/images/Bose Quiet.jpg", 
         rating: 4.6, 
         category: "audio",
         description: "Comfortable over-ear headphones with excellent noise cancellation",
-        specs: ["TriPort technology", "Noise cancellation", "24-hour battery", "Comfortable fit"]
+        specs: ["Legendary Noise Cancellation**: Combines active and passive technologies.","High-Fidelity Audio**: Clear, powerful sound with adjustable EQ.","Customizable Listening Modes**: Quiet, Aware, and custom modes with Wind Block.","Comfortable Design**: Plush earcups and padded headband.","Long Battery Life**: 24 hours playback; 15-min charge = 2.5 hours.","Wired & Wireless Options**: Includes audio cable with mic.","Multi-Device Connectivity**: Seamless switching between devices.","Voice Commands**: For calls and voice assistant access.","Spotify Tap**: Quick access to Spotify with action button.","Aware Mode**: Ambient sound passthrough for awareness.","Immersive Audio**: Spatial sound with Bose Immersive Audio.","Sleek Design**: Premium look and materials","Wind Block**: Reduces wind noise outdoors","Side Tones**: Voice feedback during calls/chats","Announce Calls**: Caller name announcement","Custom Touch Controls**: Configurable via Bose app", "Comfortable fit"]
       },
       { 
         id: 20, 
         name: "JBL Flip 6", 
-        price: 12900, 
-        image: "/images/jbl-flip-6.jpg", 
+        price: 13500, 
+        image: "/images/JBL-Flip-6.jpg", 
         rating: 4.5, 
         category: "audio",
         description: "Portable Bluetooth speaker with powerful bass and waterproof design",
-        specs: ["2-way speaker system", "IP67 waterproof", "12-hour playtime", "PartyBoost"]
+        specs: ["Transducers: 45 x 80mm woofer", "Output power:", "Frequency response: 63Hz – 20kHz", "Signal-to-noise ratio: >80dB", "Battery type: 4800mAh", "Battery charge time: 2.5 hours (5V/3A)", "Music playtime: up to 12 hours", "Cable type: USB – C charging cable"]
       },
     ],
     accessories: [
